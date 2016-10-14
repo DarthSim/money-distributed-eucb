@@ -5,7 +5,9 @@ class Money
   module Distributed
     module Fetcher
       # European Central Bank rates fetcher
-      class EuCentralBank < Base
+      class EuCentralBank
+        include Base
+
         ECB_RATES_URL =
           'http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml'.freeze
         RATE_XPATH = 'gesmes:Envelope/xmlns:Cube/xmlns:Cube//xmlns:Cube'.freeze
