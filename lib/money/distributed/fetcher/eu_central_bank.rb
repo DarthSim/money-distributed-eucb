@@ -17,7 +17,7 @@ class Money
         def exchange_rates
           doc = Nokogiri::XML(open(ECB_RATES_URL))
           doc.xpath(RATE_XPATH).each_with_object('EUR' => 1) do |node, h|
-            h[node[:currency]] = BigDecimal.new(node[:rate])
+            h[node[:currency]] = BigDecimal(node[:rate])
           end
         end
       end
