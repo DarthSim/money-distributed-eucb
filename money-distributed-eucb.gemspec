@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '>= 3.0.0'
   spec.add_development_dependency 'webmock'
   spec.add_development_dependency 'pry'
-  spec.add_development_dependency 'rubocop', '~> 0.44.1'
+  spec.add_development_dependency 'rubocop', '~> 0.49.0'
 
   spec.add_dependency 'money-distributed', '>= 0.0.2.2'
   spec.add_dependency 'nokogiri'
